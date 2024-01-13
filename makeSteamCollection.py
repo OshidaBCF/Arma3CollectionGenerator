@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 fileName = "modpackFile.html"
 
-htmlFile = open(R"Absolute_path_to_folderç_where_modpackFile_is_located" + fileName, 'r', encoding="utf-8")
+htmlFile = open(R"Absolute_path_to_folder_where_modpackFile_is_located" + fileName, 'r', encoding="utf-8")
 html = htmlFile.read()
 soup = BeautifulSoup(html, features="lxml")
 mods = []
