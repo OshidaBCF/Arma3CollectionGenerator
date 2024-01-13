@@ -37,7 +37,6 @@ for mod in modlist:
         modName = mod.find('td', attrs={'data-type' : 'DisplayName'}).text
         print("The mod \"" + modName + "\" isn't loaded from steam, you'll need to add it manually to the server if it requires it")
 
-assert 0
 options = Options()
 options.add_experimental_option("debuggerAddress", "localhost:9222") # Details in the repo README
 service = Service(executable_path=R"Absolute_path_to_chromedriver.exe")
