@@ -9,7 +9,7 @@ This is a python script that will generate a steam collection using a modpack pr
 # How to use
 1. Download the script somewhere on your computer
 2. Download the chromedriver and store it somewhere on your computer
-3. Replace "Absolute_path_to_folderç_where_modpackFile_is_located" on line 14 by the path to the modpack file
+3. Replace "Absolute_path_to_folder_where_modpackFile_is_located" on line 14 by the path to the modpack file
 4. Replace "Absolute_path_to_chromedriver" on line 43 by the path to the chromedriver.exe
 5. Replace "Absolute_path_to_image" on line 54 by the path to the image for your collection, has to be square shaped and at least 195x195 px
 6. Before running the script :
