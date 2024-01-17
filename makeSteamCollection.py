@@ -3,6 +3,7 @@ import requests
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -71,7 +72,10 @@ while (len(driver.find_elements(By.CSS_SELECTOR, R"#sortable_items > div")) != l
 
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
-WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, R"#editCollectionControls > a"))).click()
+hoverable = driver.find_element(By.CSS_SELECTOR, R"#editCollectionControls > a")
+ActionChains(driver).move_to_element(hoverable).perform()
+
+driver.find_element(By.CSS_SELECTOR, R"#editCollectionControls > a").click()
 driver.find_element(By.CSS_SELECTOR, R"#BG_top_new_collection > div.newCollectionTabs > a").click()
 
 while(len(driver.find_elements(By.CLASS_NAME, R"incompatibleNotification")) > 1):
