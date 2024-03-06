@@ -1,7 +1,7 @@
 # Arma3CollectionGenerator
 This is a python script that will generate a steam collection using a modpack preset file on Chrome or Firefox
 
-# Requierement
+# Requirement
 1. ```pip install -r requirements.txt```
 2. Python 3.X (Tested on 3.9.16)
 3. Download [Chromedriver.exe (for Chrome)](https://chromedriver.chromium.org/downloads) OR [Geckodriver.exe (for Firefox)](https://github.com/mozilla/geckodriver/releases)
